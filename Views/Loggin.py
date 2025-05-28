@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 import winsound
 
-from Controllers.Usuario import Usuario
+from controllers.usuario import Usuario
 
 class Loggin():
 
@@ -40,7 +40,7 @@ class Loggin():
 
     def ingresar(self, event):
         miUsuario = Usuario(self.txtUsuario.get(), self.txtPassword.get())
-        miUsuario.iniciarsesion(miUsuario.nombreUsuario, miUsuario.password)
+        miUsuario.iniciarSesion(miUsuario.nombreUsuario, miUsuario.password)
 
     def __init__(self):
         self.ventana = tk.Tk()
